@@ -1,0 +1,84 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .dashboard-header h1 {
+    margin: 0;
+  }
+  
+  .company-info {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .dashboard-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #f4f4f4;
+    padding-top: 70px;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+  }
+  
+  .dashboard-sidebar .menu-toggle {
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .dashboard-sidebar .dashboard-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dashboard-sidebar .dashboard-menu li {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dashboard-sidebar .dashboard-menu li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dashboard-main {
+    margin-left: 200px;
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .daily-orders {
+    text-align: center;
+  }
+  
+  .daily-orders h2 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .daily-orders span {
+    font-size: 3rem;
+    color: #007bff;
+  }
+  

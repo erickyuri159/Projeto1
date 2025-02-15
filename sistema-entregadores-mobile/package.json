@@ -1,0 +1,33 @@
+{
+  "name": "sistema-entregadores-mobile",
+  "license": "0BSD",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@react-navigation/native": "^7.0.14",
+    "@react-navigation/stack": "^7.1.1",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "expo": "~52.0.30",
+    "expo-notifications": "~0.29.13",
+    "expo-status-bar": "~2.0.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.0",
+    "node-fetch": "^3.3.2",
+    "react": "18.3.1",
+    "react-native": "0.76.6",
+    "react-native-safe-area-context": "^5.2.0",
+    "react-native-screens": "^4.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}

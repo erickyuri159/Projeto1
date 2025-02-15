@@ -1,0 +1,29 @@
+/* Certifique-se de que o corpo da página ocupa toda a altura da janela */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* O contêiner principal deve ocupar todo o espaço disponível */
+  #root {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  /* O conteúdo principal deve crescer para ocupar o espaço disponível */
+  .main-content {
+    flex-grow: 1;
+  }
+  
+  /* O rodapé deve ficar fixo na parte inferior da página */
+  footer {
+    background-color: #2d688a;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }

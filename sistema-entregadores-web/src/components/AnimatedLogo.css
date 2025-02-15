@@ -1,0 +1,33 @@
+.animated-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 9999;
+  }
+  
+  .animated-logo.animate img {
+    width: 50%;
+    max-width: 400px;
+    animation: shrink 3s forwards;
+  }
+  
+  @keyframes shrink {
+    0% {
+      width: 100vw;
+      height: 100vh;
+    }
+    100% {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  }
+  

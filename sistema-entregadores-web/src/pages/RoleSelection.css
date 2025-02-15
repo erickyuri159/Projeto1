@@ -1,0 +1,46 @@
+.role-selection-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Fundo Neutro Claro */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333333; /* Neutro Escuro */
+  }
+  
+  .buttons-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .role-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .admin-button {
+    background-color: #0057d9; /* Cor Primária */
+    color: #ffffff;
+  }
+  
+  .admin-button:hover {
+    background-color: #0047b5; /* Cor Primária mais escura */
+  }
+  
+  .company-button {
+    background-color: #ff8c00; /* Cor Secundária */
+    color: #ffffff;
+  }
+  
+  .company-button:hover {
+    background-color: #e67300; /* Cor Secundária mais escura */
+  }
+  

@@ -1,0 +1,26 @@
+.navbar {
+  position: relative;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+}
+
+.navbar-toggle-icon {
+  font-size: 24px;
+}
+
+.navbar-menu {
+  display: none;
+  flex-direction: column;
+}
+
+.navbar-menu.open {
+  display: flex;
+}
+
+.navbar-menu a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}

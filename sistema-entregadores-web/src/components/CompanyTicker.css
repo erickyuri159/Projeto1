@@ -1,0 +1,28 @@
+.company-ticker {
+    overflow: hidden;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+  }
+  
+  .ticker {
+    display: flex;
+    width: 100%;
+    animation: ticker 15s linear infinite;
+  }
+  
+  .company {
+    white-space: nowrap;
+    padding: 0 2rem;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  @keyframes ticker {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
