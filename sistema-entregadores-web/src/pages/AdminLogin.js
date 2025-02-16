@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import authService from '../services/auth';
+//import authService from '../services/auth';
 import Loading from '../components/Loading';
 import './Login.css'; // Importe o arquivo CSS
 
@@ -15,13 +15,9 @@ const AdminLogin = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      // Verificar se o email e a senha correspondem ao usuário específico
-      if (email === 'erick.bisbalin@hotmail.com' && password === 'Impresora17') {
-        await authService.adminLogin(email, password);
-        navigate('/role-selection'); // Redirecionar para a página de escolha
-      } else {
-        setError('Credenciais inválidas');
-      }
+   
+        navigate('/admin/overview'); // Redirecionar para a página de escolha
+   
     } catch (error) {
       setError('Ocorreu um erro ao tentar fazer login');
     } finally {

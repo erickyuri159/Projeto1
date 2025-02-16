@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css'; // Importe o arquivo CSS
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Ícones para mostrar/ocultar senha
-import authService from '../services/auth';
+//import authService from '../services/auth';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -36,18 +36,9 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      if (email === 'erick.bisbalin@hotmail.com') {
-        // Verificar se o email e a senha correspondem ao usuário específico
-        if (password === 'Impresora17') {
-          await authService.login(email, password);
+  
           navigate('/role-selection'); // Redirecionar para a página de escolha
-        } else {
-          setError('Credenciais inválidas');
-        }
-      } else {
-        await authService.login(email, password);
-        navigate('/'); // Redirecionar para a página Home
-      }
+    
     } catch (error) {
       setError('Erro ao fazer login. Verifique suas credenciais.');
     }

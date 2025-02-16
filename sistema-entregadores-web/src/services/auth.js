@@ -36,6 +36,14 @@ const getRole = () => {
 const setCurrentUser = (user) => {
   sessionStorage.setItem('user', JSON.stringify(user));
 };
+const getAdminOverview = () => { 
+  const overview = {
+    companyCount: 10,
+    totalEarnings: 15,
+  };
+
+  return overview;
+};
 
 const authService = {
   login,
@@ -45,6 +53,7 @@ const authService = {
   getToken,
   getRole,
   setCurrentUser,
+  getAdminOverview,
 };
 
 export default authService;

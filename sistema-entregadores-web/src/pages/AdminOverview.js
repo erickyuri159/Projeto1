@@ -1,4 +1,4 @@
-// src/pages/AdminOverview.js
+//  src/pages/AdminOverview.js
 import React, { useEffect, useState } from 'react';
 import authService from '../services/auth';
 
@@ -8,8 +8,8 @@ const AdminOverview = () => {
   useEffect(() => {
     const fetchOverview = async () => {
       try {
-        const response = await authService.getAdminOverview();
-        setOverview(response.data);
+        const response = authService.getAdminOverview();
+        setOverview(response);
       } catch (error) {
         console.error('Erro ao buscar visão geral:', error);
       }

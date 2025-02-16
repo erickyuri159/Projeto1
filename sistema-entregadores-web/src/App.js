@@ -31,7 +31,7 @@ const App = () => {
             <Route path="/Register" element={<PrivateRoute element={Register} />} />
             <Route path="/Orders" element={<PrivateRoute element={Orders} />} />
             <Route path="/orders-made" element={<PrivateRoute element={OrdersMade} />} />
-            <Route path="/pending-orders" element={<PrivateRoute element={PendingOrders} />} /> 
+            <Route path="/pending-orders" element={<PrivateRoute element={PendingOrders} />} />
             <Route path="/dashboard" element={<PrivateRoute element={Dashboard} />} />
 
             {/* Rotas públicas para login e HomeLogin */}
@@ -40,14 +40,14 @@ const App = () => {
             <Route path="/role-selection" element={<RoleSelection />} />
             <Route path="/Contact" element={<Contact />} /> {/* Rota pública para Fale Conosco */}
             <Route path="/Register" element={<Register />} /> {/* Adicionando a rota de registro */}
-
+            <Route path="/admin/overview" element={<AdminOverview />} />
+            <Route path="/admin/create-company" element={<AdminCreateCompany />} />
+            <Route path="/admin/add-credit" element={<AdminAddCredit />} />
+            <Route path="/admin/approve-company" element={<AdminApproveCompany />} />
             {/* Rotas para área administrativa */}
-            <Route path="/admin/login" element={<AdminLogin />} />
+            <Route path="/admin/Login" element={<AdminLogin />} />
             <Route element={<PrivateRoute role="admin" />}>
-              <Route path="/admin/overview" element={<AdminOverview />} />
-              <Route path="/admin/create-company" element={<AdminCreateCompany />} />
-              <Route path="/admin/add-credit" element={<AdminAddCredit />} />
-              <Route path="/admin/approve-company" element={<AdminApproveCompany />} />
+
             </Route>
           </Routes>
         </div>
